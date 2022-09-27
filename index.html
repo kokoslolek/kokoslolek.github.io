@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOJA 1 STRONA</title>
+  <link rel="stylesheet" href="style/style.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="bodyHeader">
+    <h1>
+      Portfolio - Karol Kokoszka 😊
+    </h1>
+  
+    <!-- GŁÓWNA NAWIGACJA -->
+    <nav>
+      <!-- ORDERED LIST - LISTA NUMEROWANA -->
+      <!-- LIST ITEM - ELEMENT LISTY -->
+      <!-- <ol>
+        <li>list item1 </li>
+        <li>list item2 </li>
+        <li>list item3 </li>
+      </ol> -->
+      <input type="checkbox" id="toggler">
+      <label for="toggler">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+
+      <!-- UNORDERED LIST - LISTA NIENUMEROWANA -->
+      <ul>
+        <li>
+          <a href="#about">
+            <span class="material-symbols-outlined">person</span>
+            O MNIE
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <span class="material-symbols-outlined">star</span>
+            UMIĘTNOŚCI
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <span class="material-symbols-outlined">Phone</span>
+            KONTAKT
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="about" class="wrapper">
+    <header>
+      <h2>O MNIE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptas recusandae pariatur omnis facilis, obcaecati dolorem quos eum nemo blanditiis itaque veniam doloribus sit. Tempora, debitis? Aspernatur inventore cum dicta?</p>
+    </header>
+      <div class="content">
+         <img src="https://pl.wizcase.com/wp-content/uploads/2022/02/en-visual-studio-code-logo.jpg" />
+      </div>
+  </main>
+
+  <article id="skills" class="wrapper">
+    <header>
+      <h2>UMIĘTNOŚCI</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iure quisquam eaque, culpa perspiciatis explicabo tempore reiciendis facilis impedit et? Atque vero obcaecati reprehenderit illo laborum dolores explicabo dolorem inventore?</p>
+    </header>
+      <div class="content">
+        <!-- im większy border tym grubsza tabelka -->
+        <div class="tableWrapper">
+          <table>
+            <!-- nagłówek tabeli -->
+            <thead>
+              <!-- wiersz nagłówkowy -->
+              <tr>
+                <!-- TABLE HEADING komórka nagłówka -->
+                <th>LP. </th>
+                <th>TECHNOLOGIA</th>
+                <th>BIEGŁOŚĆ</th>
+              </tr>
+            </thead>
+      
+            <!-- tabela właściwa (dane) -->
+            <tbody>
+              <!-- TABLE ROW (wiersz) -->
+              <tr>
+                <!-- TABLE DIVIDE (podział wiersza) -->
+                <td>1</td>
+                <td>HTML</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+      
+              <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>⭐</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>SASS(SCSS)</td>
+                <td>⭐⭐</td>
+              </tr>
+      
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  </article>
+
+
+  <section id="contact" class="wrapper">
+    <header>
+      <h3>KONTAKT</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem minus pariatur accusamus, voluptas asperiores quo libero quidem distinctio sapiente hic debitis ipsum cupiditate tempore ex optio sunt doloribus. Necessitatibus, corrupti.</p>
+    </header>
+    <div class="content">
+        <form>
+          <input type="email" placeholder="EMAIL" />
+          <input type="text" placeholder="TYTUŁ">
+          <textarea cols="21" rows="5" placeholder="WIADOMOŚĆ"></textarea>
+          <input type="submit" value="WYŚLIJ">
+        </form>
+      </div>
+  </section>
+  <footer>
+    <ol>
+      <li>
+        <a href="#about">O MNIE</a>
+      </li>
+      <li>
+        <a href="#skills">UMIĘTNOŚCI</a>
+      </li>
+      <li>
+        <a href="#contact">KONTAKT</a>
+      </li>
+    </ol>
+  </footer>
+</body>
+</html>

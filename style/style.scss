@@ -276,12 +276,12 @@ $n:3; /* number of images*/
   
   display: grid;
   overflow: hidden;
-  width: 500px;
+  width: 100%;
   -webkit-mask: linear-gradient(90deg,rgba(132, 31, 31, 0),rgb(102, 10, 10) 10% 90%,rgba(92, 1, 1, 0));
 }
 .gallery > img {
   grid-area: 1/1;
-  width: 20vw;
+  width: 30vw;
   object-fit: cover;
   animation: r var(--d) linear infinite;
 }
@@ -289,8 +289,8 @@ $n:3; /* number of images*/
   .gallery > img:nth-child(#{$i}) {animation-delay: calc(#{(1 - $i)/$n}*var(--d))}
 }
 @keyframes r {
-  math.div{100*($n - 1)/$n}% {transform: translate((1 - $n)*100%)}
-  math.div{100*($n - 1)/$n + .01}% {transform: translate(100%)}
+  #{100*($n - 1)/$n}% {transform: translate((1 - $n)*100%)}
+  #{100*($n - 1)/$n + .01}% {transform: translate(100%)}
 }
 
 

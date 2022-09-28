@@ -262,13 +262,13 @@ body footer p {
   --d: 20s; /* duration */
   display: grid;
   overflow: hidden;
-  width: 500px;
+  width: 100%;
   -webkit-mask: linear-gradient(90deg, rgba(132, 31, 31, 0), rgb(102, 10, 10) 10% 90%, rgba(92, 1, 1, 0));
 }
 
 .gallery > img {
   grid-area: 1/1;
-  width: 20vw;
+  width: 30vw;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: r var(--d) linear infinite;

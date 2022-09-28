@@ -289,8 +289,8 @@ $n:3; /* number of images*/
   .gallery > img:nth-child(#{$i}) {animation-delay: calc(#{(1 - $i)/$n}*var(--d))}
 }
 @keyframes r {
-  #{100*($n - 1)/$n}% {transform: translate((1 - $n)*100%)}
-  #{100*($n - 1)/$n + .01}% {transform: translate(100%)}
+  math.div{100*($n - 1)/$n}% {transform: translate((1 - $n)*100%)}
+  math.div{100*($n - 1)/$n + .01}% {transform: translate(100%)}
 }
 
 

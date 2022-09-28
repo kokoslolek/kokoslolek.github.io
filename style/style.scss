@@ -281,7 +281,7 @@ $n:3; /* number of images*/
 }
 .gallery > img {
   grid-area: 1/1;
-  width: 10vw;
+  width: 20vw;
   object-fit: cover;
   animation: r var(--d) linear infinite;
 }

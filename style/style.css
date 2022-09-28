@@ -268,7 +268,7 @@ body footer p {
 
 .gallery > img {
   grid-area: 1/1;
-  width: 10vw;
+  width: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: r var(--d) linear infinite;

@@ -236,6 +236,8 @@
           flex:1;
           text-align: center;
           padding: 3rem;
+          padding-left: 10%;
+          padding-right: 10%;
         }
       }
     }
@@ -265,4 +267,37 @@
 	10%, 50% {
 		transform: translateY(0px);
 	}
+}
+
+$n:3; /* number of images*/
+
+.gallery  {
+  --d: 20s; /* duration */
+  
+  display: grid;
+  overflow: hidden;
+  width: 500px;
+  -webkit-mask: linear-gradient(90deg,rgba(132, 31, 31, 0),rgb(102, 10, 10) 10% 90%,rgba(92, 1, 1, 0));
+}
+.gallery > img {
+  grid-area: 1/1;
+  width: 10vw;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+@for $i from 2 to ($n + 1) {
+  .gallery > img:nth-child(#{$i}) {animation-delay: calc(#{(1 - $i)/$n}*var(--d))}
+}
+@keyframes r {
+  #{100*($n - 1)/$n}% {transform: translate((1 - $n)*100%)}
+  #{100*($n - 1)/$n + .01}% {transform: translate(100%)}
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: var(--background-dark);
 }
